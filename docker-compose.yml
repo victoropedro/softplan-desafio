@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  taxajuros:
+    image: taxajuros
+    build:
+      "./taxajuros"
+    ports:
+      - 4444:80
+    networks: 
+      - desafio-network  
+  calculajuros:
+    image: calculajuros
+    build:
+      "./calculajuros"
+    ports:
+      - 5555:80
+    networks: 
+      - desafio-network
+networks:
+  desafio-network:
+    driver: "bridge"
