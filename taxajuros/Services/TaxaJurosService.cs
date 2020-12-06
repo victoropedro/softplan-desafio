@@ -1,5 +1,4 @@
-﻿using System.Threading.Tasks;
-using taxajuros.Interfaces;
+﻿using taxajuros.Interfaces;
 
 namespace taxajuros.Services
 {

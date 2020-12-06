@@ -6,11 +6,13 @@ namespace calculajuros.Services
 {
     public class TaxaJurosService : ITaxaJurosService
     {
+        private readonly string url = "http://localhost:4444/taxaJuros";
+
         public async Task<string> ObterTaxaJuros()
         {
             using (HttpClient httpClient = new HttpClient())
             {
-                return await httpClient.GetStringAsync("http://localhost:4444/taxaJuros");              
+                return await httpClient.GetStringAsync(url);              
             }
         }
     }

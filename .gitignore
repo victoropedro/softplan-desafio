@@ -4,6 +4,8 @@
 /taxajuros.teste.unidade/obj
 /calculajuros/bin
 /calculajuros/obj
+/calculajuros.teste.unidade/bin
+/calculajuros.teste.unidade/obj
 /taxajuros/.vscode
 /calculajuros/.vscode
 .vs/softplan-desafio/DesignTimeBuild/.dtbcache.v2
