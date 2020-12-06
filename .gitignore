@@ -1,5 +1,7 @@
 /taxajuros/bin
 /taxajuros/obj
+/taxajuros.teste.unidade/bin
+/taxajuros.teste.unidade/obj
 /calculajuros/bin
 /calculajuros/obj
 /taxajuros/.vscode

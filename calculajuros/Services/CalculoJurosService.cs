@@ -15,7 +15,7 @@ namespace calculajuros.Services
 
         public async Task<decimal> ObterCalculoJuros(decimal valorInicial, int meses)
         {
-            var taxaJuros  = taxaJurosService.ObterCalculoJuros();
+            var taxaJuros  = Convert.ToDouble( _taxaJurosService.ObterTaxaJuros());
             return await Task.FromResult(Math.Truncate(100 * (valorInicial * (decimal)Math.Pow((1 + taxaJuros), (double)meses))) / 100);
         }
     }
