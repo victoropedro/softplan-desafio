@@ -7,11 +7,11 @@ namespace calculajuros.teste.unidade
     public class CalculaJurosServiceTeste
     {
         [Fact]
-        public async void CalculoJurosController_ObterCalculoJuros_Sucesso()
+        public void CalculoJurosController_ObterCalculoJuros_Sucesso()
         {
             CalculoJurosService calculoJurosService = new CalculoJurosService();
 
-            var valorcalculado = await calculoJurosService.ObterCalculoJuros(100, 5);
+            var valorcalculado = calculoJurosService.CalcularJuros(100, 5, 0.01);
 
             Assert.Equal($"105,10", valorcalculado.ToString("#0.00"));
         }

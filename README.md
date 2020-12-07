@@ -14,8 +14,8 @@ Comandos executar a imagem:
    - docker-compose build
    - docker-compose up
    
-TaxaJuros: http://localhost:4444/
-CalculaJuros: http://localhost:5555/
+ - TaxaJuros: http://localhost:4444/
+ - CalculaJuros: http://localhost:5555/
 
 # Victor de Oliveira Pedro
 - https://www.linkedin.com/in/victor-de-oliveira-pedro-9658521b/

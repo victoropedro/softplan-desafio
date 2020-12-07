@@ -38,7 +38,7 @@ namespace calculajuros.Services
             return retorno.Replace(".", ",");
         }
 
-        private decimal CalcularJuros(decimal valorInicial, int meses, double taxaJuros)
+        public decimal CalcularJuros(decimal valorInicial, int meses, double taxaJuros)
         {
             return (Math.Truncate(100 * (valorInicial * (decimal)Math.Pow((1 + taxaJuros), (double)meses))) / 100);
         }
