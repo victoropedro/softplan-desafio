@@ -44,7 +44,8 @@ namespace calculajuros
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-        {            // Definindo a cultura padr�o: pt-BR
+        {   
+            // Definindo a cultura padr�o: pt-BR
             var cultureInfo = new[] { new CultureInfo("pt-BR") };
             app.UseRequestLocalization(new RequestLocalizationOptions
             {

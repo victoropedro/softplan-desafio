@@ -6,7 +6,8 @@
 /calculajuros/obj
 /calculajuros.teste.unidade/bin
 /calculajuros.teste.unidade/obj
+/calculajuros.teste.integracao/bin
+/calculajuros.teste.integracao/obj
 /taxajuros/.vscode
 /calculajuros/.vscode
-.vs/softplan-desafio/DesignTimeBuild/.dtbcache.v2
-.vs/softplan-desafio/v16/.suo
+.vs/
