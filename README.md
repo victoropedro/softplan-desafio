@@ -13,7 +13,8 @@ Comandos executar a imagem:
    - cd softplan-desafio
    - docker-compose build
    - docker-compose up
-   
+
+Endpoints:   
  - TaxaJuros: http://localhost:4444/
  - CalculaJuros: http://localhost:5555/
 
