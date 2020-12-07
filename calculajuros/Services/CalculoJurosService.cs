@@ -7,7 +7,7 @@ namespace calculajuros.Services
 {
     public class CalculoJurosService : ICalculoJurosService
     {
-        private const string _urlTaxaJuros = "http://localhost:4444/taxaJuros";
+        private string _urlTaxaJuros = "http://taxajuros/taxaJuros";
         private const string _urlCodigo = "https://github.com/victoropedro/softplan-desafio";
 
         public async Task<decimal> ObterCalculoJuros(decimal valorInicial, int meses)
@@ -24,6 +24,10 @@ namespace calculajuros.Services
 
         public async Task<string> ObterTaxaJuros()
         {
+            #if DEBUG
+            _urlTaxaJuros = "https://localhost:44310/taxaJuros";
+            #endif
+            
             string retorno;
 
             using (HttpClient httpClient = new HttpClient())
