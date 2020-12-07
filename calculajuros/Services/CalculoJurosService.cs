@@ -7,6 +7,7 @@ namespace calculajuros.Services
     public class CalculoJurosService : ICalculoJurosService
     {
         private readonly ITaxaJurosService _taxaJurosService;
+        private readonly string _urlCodigo = "https://github.com/victoropedro/softplan-desafio";
 
         public CalculoJurosService(ITaxaJurosService taxaJurosService)
         {
@@ -24,6 +25,11 @@ namespace calculajuros.Services
         public decimal CalcularJuros(decimal valorInicial, int meses, double taxaJuros)
         {
             return (Math.Truncate(100 * (valorInicial * (decimal)Math.Pow((1 + taxaJuros), (double)meses))) / 100);
+        }
+
+        public string ObterCodigo()
+        {
+            return _urlCodigo;
         }
     }
 }

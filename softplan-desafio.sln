@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "calculajuros.teste.unidade"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calculajuros.teste.integracao", "calculajuros.teste.integracao\calculajuros.teste.integracao.csproj", "{94A45A8C-CD27-413A-B5BE-07C5A6456568}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "taxajuros.teste.integracao", "taxajuros.teste.integracao\taxajuros.teste.integracao.csproj", "{29104B03-7B95-4878-8F2A-58C95FE503F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{94A45A8C-CD27-413A-B5BE-07C5A6456568}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94A45A8C-CD27-413A-B5BE-07C5A6456568}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94A45A8C-CD27-413A-B5BE-07C5A6456568}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29104B03-7B95-4878-8F2A-58C95FE503F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29104B03-7B95-4878-8F2A-58C95FE503F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29104B03-7B95-4878-8F2A-58C95FE503F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29104B03-7B95-4878-8F2A-58C95FE503F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

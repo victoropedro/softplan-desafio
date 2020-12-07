@@ -29,7 +29,7 @@ namespace calculajuros.Controllers
         [Route("showmethecode")]
         public IActionResult ObterCodigo()
         {
-            return Ok("https://github.com/victoropedro/softplan-desafio");
+            return Ok(_calculoJurosService.ObterCodigo());
         }
     }
 }
