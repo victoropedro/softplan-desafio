@@ -15,7 +15,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\calculajuros\calculajuros.csproj" />
-    <ProjectReference Include="..\taxajuros\taxajuros.csproj" />
   </ItemGroup>
 
 </Project>

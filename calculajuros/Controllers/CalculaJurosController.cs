@@ -21,7 +21,7 @@ namespace calculajuros.Controllers
         [Route("calculaJuros")]
         public async Task<IActionResult> ObterCalculoJuros([FromQuery] CalculoJurosViewModel calculoJurosViewModel)
         {           
-            return Ok(await _calculoJurosService.ObterCalculoJuros(calculoJurosViewModel.ValorInicial, calculoJurosViewModel.Meses));                  
+            return Ok((await _calculoJurosService.ObterCalculoJuros(calculoJurosViewModel.ValorInicial, calculoJurosViewModel.Meses)).ToString("#0.00"));                  
         }
 
         [HttpGet]

@@ -8,8 +8,7 @@ namespace calculajuros.Configuration
     {
         public static IServiceCollection ResolveDependencies(this IServiceCollection services)
         {
-            services.AddTransient<ICalculoJurosService, CalculoJurosService>();
-            services.AddTransient<ITaxaJurosService, TaxaJurosService>();
+            services.AddTransient<ICalculoJurosService, CalculoJurosService>();          
 
             return services;
         }

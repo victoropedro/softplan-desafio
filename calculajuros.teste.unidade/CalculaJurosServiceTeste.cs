@@ -7,13 +7,11 @@ namespace calculajuros.teste.unidade
     public class CalculaJurosServiceTeste
     {
         [Fact]
-        public void CalculoJurosController_ObterCalculoJuros_Sucesso()
+        public async void CalculoJurosController_ObterCalculoJuros_Sucesso()
         {
-            taxajuros.Services.TaxaJurosService taxaJurosService = new taxajuros.Services.TaxaJurosService();
             CalculoJurosService calculoJurosService = new CalculoJurosService();
 
-            var taxajuros = Convert.ToDouble(taxaJurosService.ObterTaxaJuros());
-            var valorcalculado = calculoJurosService.CalcularJuros(100, 5, Convert.ToDouble(taxajuros));
+            var valorcalculado = await calculoJurosService.ObterCalculoJuros(100, 5);
 
             Assert.Equal($"105,10", valorcalculado.ToString("#0.00"));
         }

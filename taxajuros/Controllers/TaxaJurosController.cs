@@ -19,7 +19,7 @@ namespace taxajuros.Controllers
         [Route("taxaJuros")]
         public IActionResult ObterTaxaJuros()
         {
-            return Ok(_taxaJurosService.ObterTaxaJuros());
+            return Ok(_taxaJurosService.ObterTaxaJuros().ToString("#0.00"));
         }
     }
 }
